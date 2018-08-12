@@ -10,34 +10,52 @@ public class Ball : MonoBehaviour {
 	float velocity =0;
 
 	//for audio
-	public AudioSource bip;
+
+	public AudioSource source;
+	public AudioClip bip;
+	public AudioClip paddlepop;
+	public AudioClip crash;
+
+
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D> ();
-		bip = GetComponent<AudioSource> ();
+		source = GetComponent<AudioSource>();
 		velocity = Random .Range(minSpeed, maxSpeed);
 		float service = Random .Range(0f, 2f);
 		Vector2 direction;
 		float angle= Mathf.Deg2Rad*0;
 		if(service>=1f){
-			angle = Random.Range (50, 310);
+			angle = Random.Range (50, -50);
 		}else if (service<1f){
 			angle = Random.Range (130, 230);
 		}
+		Debug.Log ("Service Angle" + angle);
 		direction = new Vector2 (Mathf.Cos (angle*Mathf.Deg2Rad), Mathf.Sin (angle*Mathf.Deg2Rad));
 		rb.AddForce (direction * velocity, ForceMode2D.Impulse);
 
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-		
+
+		if (rb.transform.position.x <=-10.5f||rb.transform.position.x >=10.5f) {
+			source.PlayOneShot (crash);
+		}
 
 
 	}
 	void OnCollisionEnter2D(Collision2D col){
-		bip.Play ();
-			velocity *= 1.03f;
+		string col_id = col.gameObject.tag;
+
+
+		if(col_id=="paddle"){
+			source.PlayOneShot(paddlepop);
+		}
+		if(col_id=="topwall"||col_id=="bottomwall"){
+			source.PlayOneShot(bip);
+		}
+			velocity *= 1.05f;
 			Debug.Log (transform.position.x);
 	
 		
