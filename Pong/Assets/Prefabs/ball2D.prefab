@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 114098474922969856}
   - component: {fileID: 61561714457445468}
   - component: {fileID: 82295829693754086}
-  - component: {fileID: 114753550312385638}
   m_Layer: 0
   m_Name: ball2D
   m_TagString: ball
@@ -40,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1531537631786604}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -200,20 +199,6 @@ MonoBehaviour:
   minSpeed: 2
   maxSpeed: 10
   bip: {fileID: 0}
---- !u!114 &114753550312385638
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1531537631786604}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85ea6d1e24a9b32459da9486b03c4c3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ball: {fileID: 0}
-  scoreP1: {fileID: 0}
-  scoreP2: {fileID: 0}
 --- !u!212 &212232755200703306
 SpriteRenderer:
   m_ObjectHideFlags: 1

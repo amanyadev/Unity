@@ -6,9 +6,9 @@ public class Ball : MonoBehaviour {
 	[SerializeField]
 	Rigidbody2D rb ;
 	[SerializeField]
-	float minSpeed = 2f,maxSpeed = 10f;
+	float minSpeed = 5f,maxSpeed = 10f;
 	float velocity =0;
-	int count = 0;
+
 	//for audio
 	public AudioSource bip;
 	// Use this for initialization

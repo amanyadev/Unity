@@ -126,32 +126,13 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 425022244}
-  - component: {fileID: 425022243}
   m_Layer: 0
   m_Name: Scores
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &425022243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 425022242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 422f635636ebe294e8ff7fe86e86141c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabBall: {fileID: 1531537631786604, guid: 17cc9e953de91e04289c4ca360cab3ce, type: 2}
-  scoreP1: {fileID: 1817784408}
-  scoreP2: {fileID: 500529137}
-  P1: 0
-  P2: 0
-  ball: {fileID: 969479748}
-  rb2D: {fileID: 969479754}
+  m_IsActive: 0
 --- !u!4 &425022244
 Transform:
   m_ObjectHideFlags: 0
@@ -183,6 +164,7 @@ GameObject:
   - component: {fileID: 519420033}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -272,6 +254,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbf4b545c87982949a62929ada1f60a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422f635636ebe294e8ff7fe86e86141c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabBall: {fileID: 1531537631786604, guid: 17cc9e953de91e04289c4ca360cab3ce, type: 2}
+  scoreP1: {fileID: 1817784408}
+  scoreP2: {fileID: 500529137}
+  P1: 0
+  P2: 0
 --- !u!1 &539777073
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,19 +515,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &969479748 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1531537631786604, guid: 17cc9e953de91e04289c4ca360cab3ce,
-    type: 2}
-  m_PrefabInternal: {fileID: 1242927956}
 --- !u!4 &969479749 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4821285698488626, guid: 17cc9e953de91e04289c4ca360cab3ce,
-    type: 2}
-  m_PrefabInternal: {fileID: 1242927956}
---- !u!50 &969479754 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 50303110448457826, guid: 17cc9e953de91e04289c4ca360cab3ce,
     type: 2}
   m_PrefabInternal: {fileID: 1242927956}
 --- !u!1 &1023350451 stripped
@@ -606,24 +594,25 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114753550312385638, guid: 17cc9e953de91e04289c4ca360cab3ce,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: ball
       value: 
       objectReference: {fileID: 1149297876519664, guid: 8ccf6e7141875584bbb0a1b48f705490,
         type: 2}
-    - target: {fileID: 114753550312385638, guid: 17cc9e953de91e04289c4ca360cab3ce,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: scoreP1
       value: 
       objectReference: {fileID: 1817784408}
-    - target: {fileID: 114753550312385638, guid: 17cc9e953de91e04289c4ca360cab3ce,
-        type: 2}
+    - target: {fileID: 0}
       propertyPath: scoreP2
       value: 
       objectReference: {fileID: 500529137}
+    - target: {fileID: 1531537631786604, guid: 17cc9e953de91e04289c4ca360cab3ce, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 114753550312385638, guid: 17cc9e953de91e04289c4ca360cab3ce, type: 2}
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 17cc9e953de91e04289c4ca360cab3ce, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1334769773
@@ -1041,6 +1030,16 @@ Prefab:
     - target: {fileID: 1149297876519664, guid: 8ccf6e7141875584bbb0a1b48f705490, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114679815420553426, guid: 8ccf6e7141875584bbb0a1b48f705490,
+        type: 2}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114923636289107806, guid: 8ccf6e7141875584bbb0a1b48f705490,
+        type: 2}
+      propertyPath: m_Text
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8ccf6e7141875584bbb0a1b48f705490, type: 2}
