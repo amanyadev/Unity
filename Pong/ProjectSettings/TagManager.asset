@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - ball
+  - paddle
+  - leftwall
+  - rightwall
+  - topwall
+  - bottomwall
   layers:
   - Default
   - TransparentFX

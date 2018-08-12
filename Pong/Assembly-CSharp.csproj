@@ -51,11 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scoreboard.cs" />
      <Compile Include="Assets\Scripts\Ball.cs" />
      <Compile Include="Assets\Scripts\Controls.cs" />
      <Compile Include="Assets\Scripts\GameInitializer.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Paddle.cs" />
+     <Compile Include="Assets\Scripts\Score.cs" />
      <Compile Include="Assets\Scripts\ScreenUtils.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Aman/Desktop/New folder (2)/Unity/Pong/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

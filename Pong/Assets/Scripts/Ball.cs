@@ -9,9 +9,12 @@ public class Ball : MonoBehaviour {
 	float minSpeed = 2f,maxSpeed = 10f;
 	float velocity =0;
 	int count = 0;
+	//for audio
+	public AudioSource bip;
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D> ();
+		bip = GetComponent<AudioSource> ();
 		velocity = Random .Range(minSpeed, maxSpeed);
 		float service = Random .Range(0f, 2f);
 		Vector2 direction;
@@ -33,9 +36,10 @@ public class Ball : MonoBehaviour {
 
 	}
 	void OnCollisionEnter2D(Collision2D col){
-		
+		bip.Play ();
 			velocity *= 1.03f;
-			Debug.Log (count++);
+			Debug.Log (transform.position.x);
+	
 		
 	}
 }
