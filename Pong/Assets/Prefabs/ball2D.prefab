@@ -334,7 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 50992359650035182}
   minSpeed: 5
-  maxSpeed: 20
+  maxSpeed: 11
   source: {fileID: 0}
   bip: {fileID: 8300000, guid: 7b23a5c775695a444b3cdf6dabca767f, type: 3}
   paddlepop: {fileID: 8300000, guid: 21ebbd1b52bdcf0419e99b24a37dff6b, type: 3}

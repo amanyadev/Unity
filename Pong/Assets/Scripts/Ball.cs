@@ -6,7 +6,7 @@ public class Ball : MonoBehaviour {
 	[SerializeField]
 	Rigidbody2D rb ;
 	[SerializeField]
-	float minSpeed = 5f,maxSpeed = 10f;
+	float minSpeed = 5f,maxSpeed = 11f;
 	float velocity =0;
 
 	//for audio
@@ -30,7 +30,7 @@ public class Ball : MonoBehaviour {
 		}else if (service<1f){
 			angle = Random.Range (130, 230);
 		}
-		Debug.Log ("Service Angle" + angle);
+		Debug.Log ("Service Angle" + angle+"Speed "+ velocity);
 		direction = new Vector2 (Mathf.Cos (angle*Mathf.Deg2Rad), Mathf.Sin (angle*Mathf.Deg2Rad));
 		rb.AddForce (direction * velocity, ForceMode2D.Impulse);
 
