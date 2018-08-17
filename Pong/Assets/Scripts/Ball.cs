@@ -30,7 +30,7 @@ public class Ball : MonoBehaviour {
 		}else if (service<1f){
 			angle = Random.Range (130, 230);
 		}
-		Debug.Log ("Service Angle" + angle+"Speed "+ velocity);
+//		Debug.Log ("Service Angle" + angle+"Speed "+ velocity);
 		direction = new Vector2 (Mathf.Cos (angle*Mathf.Deg2Rad), Mathf.Sin (angle*Mathf.Deg2Rad));
 		rb.AddForce (direction * velocity, ForceMode2D.Impulse);
 
@@ -56,7 +56,7 @@ public class Ball : MonoBehaviour {
 			source.PlayOneShot(bip);
 		}
 			velocity *= 1.05f;
-			Debug.Log (transform.position.x);
+//			Debug.Log (transform.position.x);
 	
 		
 	}

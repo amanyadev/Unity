@@ -54,7 +54,7 @@ public class scoreboard : MonoBehaviour {
 
 	void spawnBall(){
 		
-		Debug.Log ("Inside SpawnBall method");
+//		Debug.Log ("Inside SpawnBall method");
 		Vector3 location = new Vector3 (0f, 0f, -Camera.main.transform.position.z);
 		/*	Vector3 worldLocation = Camera.main.ScreenToWorldPoint(location);*/
 

@@ -2,11 +2,14 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Ball.cs">
     <Files>
-      <File FileName="Assets\Scripts\Ball.cs" Line="17" Column="15" />
+      <File FileName="Assets\Scripts\Ball.cs" Line="9" Column="35" />
       <File FileName="Assets\Scripts\Paddle.cs" Line="67" Column="2" />
-      <File FileName="D:\CSE\Coursera C#\Builds\Teddy Bear Spawner\SpawningTeddies\Assets\scripts\TeddyBearSpawner.cs" Line="28" Column="34" />
-      <File FileName="Assets\Scripts\Score.cs" Line="15" Column="31" />
-      <File FileName="Assets\scoreboard.cs" Line="31" Column="33" />
+      <File FileName="D:\CSE\Coursera C#\Builds\Teddy Bear Spawner\SpawningTeddies\Assets\scripts\TeddyBearSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GameInitializer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\scoreboard.cs" Line="61" Column="63" />
+      <File FileName="Assets\Scripts\ScreenUtils.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Controls.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
