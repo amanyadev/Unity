@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 61019052950647112}
   - component: {fileID: 82902504475902090}
   - component: {fileID: 96782751186488180}
+  - component: {fileID: 114263415684623882}
   m_Layer: 0
   m_Name: ball2D
   m_TagString: ball
@@ -321,6 +322,26 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.15
   m_Autodestruct: 0
+--- !u!114 &114263415684623882
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1619294026281292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6c71ff38a7c884cacdbf93c754f10e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawningTime: 10
+  powerupDuration: 6
+  Paddle1: {fileID: 0}
+  Paddle2: {fileID: 0}
+  ball: {fileID: 1619294026281292}
+  rbPaddle1: {fileID: 0}
+  rbPaddle2: {fileID: 0}
+  rbBall: {fileID: 0}
+  flag: 0
 --- !u!114 &114292817632152920
 MonoBehaviour:
   m_ObjectHideFlags: 1

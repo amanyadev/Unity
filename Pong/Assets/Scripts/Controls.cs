@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Controls : MonoBehaviour {
-
+	/// <summary>
+	/// /*Nothing much here*/
+	/// </summary>
 	// Use this for initialization
 	void Start () {
 		

@@ -103,6 +103,7 @@
      <Compile Include="Assets\Scripts\GameInitializer.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\Paddle.cs" />
+     <Compile Include="Assets\Scripts\PowerUp.cs" />
      <Compile Include="Assets\Scripts\scoreboard.cs" />
      <Compile Include="Assets\Scripts\ScreenUtils.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />

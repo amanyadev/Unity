@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 519420035}
   - component: {fileID: 519420036}
   - component: {fileID: 519420037}
+  - component: {fileID: 519420038}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -250,7 +251,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
@@ -262,7 +263,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f87e4989c5e703e428df4339d59e2c72, type: 3}
   m_Name: 
@@ -297,6 +298,27 @@ MonoBehaviour:
   pad: {fileID: 1480756626}
   target: {fileID: 0}
   speed: 10
+  jam: 0.5
+--- !u!114 &519420038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d6c71ff38a7c884cacdbf93c754f10e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawningTime: 10
+  powerupDuration: 6
+  Paddle1: {fileID: 1480756622}
+  Paddle2: {fileID: 1023350451}
+  ball: {fileID: 1619294026281292, guid: c5bda9e3ed40e7140bda42ae06028615, type: 2}
+  rbPaddle1: {fileID: 0}
+  rbPaddle2: {fileID: 0}
+  rbBall: {fileID: 0}
+  flag: 0
 --- !u!1 &648672829
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +459,7 @@ Prefab:
     - target: {fileID: 50586044357291678, guid: 8dd253d70c0555442985aebb0775cbf8,
         type: 2}
       propertyPath: m_Constraints
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4425161613034708, guid: 8dd253d70c0555442985aebb0775cbf8, type: 2}
       propertyPath: m_LocalScale.y
@@ -670,7 +692,7 @@ Prefab:
     - target: {fileID: 50586044357291678, guid: 8dd253d70c0555442985aebb0775cbf8,
         type: 2}
       propertyPath: m_Constraints
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114811684191765072, guid: 8dd253d70c0555442985aebb0775cbf8,
         type: 2}
@@ -840,6 +862,7 @@ MonoBehaviour:
   pad: {fileID: 1023350455}
   target: {fileID: 0}
   speed: 10
+  jam: 0.5
 --- !u!4 &1480756626 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4425161613034708, guid: 8dd253d70c0555442985aebb0775cbf8,
