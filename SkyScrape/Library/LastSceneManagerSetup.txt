@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Building Game/Building Game beta.unity
-  isLoaded: 1
-  isActive: 1
